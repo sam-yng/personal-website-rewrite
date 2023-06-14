@@ -1,0 +1,53 @@
+.DaruText {
+	font-family: var(--daru-font);
+}
+
+.PoppinsText {
+	font-family: var(--poppins-font);
+}
+
+@media (min-width: 1280px) {
+	.Document {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+}
+
+.Document {
+	background-image: linear-gradient(#121212, #1E1E1E, #121212);
+	color: white;
+}
+
+@media (min-width: 768px) {
+	.Profile {
+		display: block;
+	}
+}
+
+.Profile {
+	height: 30rem;
+	width: auto;
+	border-radius: 12px;
+}
+
+.Link {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 8px;
+	margin-top: auto;
+	height: 52px;
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+}
+
+.Divider {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.About {
+	text-align: end;
+}
