@@ -5,12 +5,12 @@ export const NavBar: React.FC = () => {
   return (
     <nav>
       <Flex>
-        <h1 className="DaruText">Sam Edgeworth</h1>
+        <h1 className="daru-text">Sam Edgeworth</h1>
         <Spacer />
-        <Flex className="PoppinsText">
-          <p>About</p>
-          <p>Portfolio</p>
-          <p>Contact</p>
+        <Flex className="poppins-text">
+          <p className="nav">About</p>
+          <p className="nav">Portfolio</p>
+          <p className="nav">Contact</p>
         </Flex>
       </Flex>
     </nav>

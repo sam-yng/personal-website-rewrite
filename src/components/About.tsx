@@ -16,16 +16,16 @@ import ga from "../../public/assets/logos/GA.png";
 
 export const About: React.FC = () => {
   return (
-    <main className="PoppinsText About">
-      <h1 className="DaruText">About Me</h1>
-      <p>
+    <main className="poppins-text about">
+      <h1 className="daru-text about-info">About Me</h1>
+      <p className="about-info">
         {" "}
         In 2022, I decided to drop out of university and pursue a career in
         software development. I have been honing my engineering skills and
         focusing, primarily, on front-end tools and practices with the goal to
         become a junior engineer. My proficiencies are as follows:
       </p>
-      <Flex>
+      <Flex className="all-boxes">
         <SkillsBox
           title="Languages"
           one={<SkillsItem name="HTML" image={html.src} />}

@@ -17,9 +17,9 @@ export const SkillsBox: React.FC<SkillsBoxProps> = ({
   four,
 }: SkillsBoxProps) => {
   return (
-    <Flex direction={"column"}>
-      <h1>{title}</h1>
-      <Card direction="column">
+    <Flex direction={"column"} className="box">
+      <p className="skill-title">{title}</p>
+      <Card direction="column" className="skills">
         {one}
         {two}
         {three}

@@ -4,7 +4,7 @@ import { Intro } from "./Intro";
 
 export const Main: React.FC = () => {
   return (
-    <main className="Main">
+    <main className="main">
       <NavBar />
       <Intro />
     </main>

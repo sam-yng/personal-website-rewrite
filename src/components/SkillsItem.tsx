@@ -12,11 +12,11 @@ export const SkillsItem: React.FC<SkillsItemProps> = ({
   image,
 }: SkillsItemProps) => {
   return (
-    <Flex>
-      <Image width={56} height={60} src={image} alt="skill item image" />
+    <Flex className="skill-item">
+      <Image width={56} height={60} src={image} alt="logo" />
       <Flex direction={"column"}>
         {" "}
-        <h1>{name}</h1>
+        <p className="tool-name">{name}</p>
       </Flex>
     </Flex>
   );

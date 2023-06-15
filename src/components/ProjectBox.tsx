@@ -1,15 +1,11 @@
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Flex,
-  Heading,
-  Stack,
-} from "@chakra-ui/react";
-import Image from "next/image";
+import { Card, CardBody, CardFooter, Flex, Stack } from "@chakra-ui/react";
 import React from "react";
-import code from "../assets/images/code.png";
-import eye from "../assets/images/eye.png";
+import {
+  InfoOutlineIcon,
+  NotAllowedIcon,
+  ViewIcon,
+  ViewOffIcon,
+} from "@chakra-ui/icons";
 
 type ProjectBoxProps = {
   image: string;
@@ -33,26 +29,26 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
   codeSrc,
 }: ProjectBoxProps) => {
   return (
-    <Card>
+    <Card className="poppins-text card">
       <CardBody>
-        <Image src={image} alt="project image" />
+        <img src={image} alt="project image" />
         <Stack>
-          <Flex>
-            <img src={firstTool} alt="tool" />
-            <img src={secondTool} alt="tool" />
-            <img src={thirdTool} alt="tool" />
+          <Flex className="tools">
+            <img className="a-tool" src={firstTool} alt="tool" />
+            <img className="a-tool" src={secondTool} alt="tool" />
+            <img className="a-tool" src={thirdTool} alt="tool" />
           </Flex>
-          <Heading>{title}</Heading>
+          <h1 className="project-name">{title}</h1>
           <p>{description}</p>
         </Stack>
       </CardBody>
       <CardFooter>
         <Flex>
           <a href={viewSrc} target="blank">
-            <Image src={eye} alt="eye" />
+            {viewSrc === undefined ? <ViewOffIcon /> : <ViewIcon />}
           </a>
           <a href={codeSrc} target="blank">
-            <Image src={code} alt="code" />
+            {codeSrc === undefined ? <NotAllowedIcon /> : <InfoOutlineIcon />}
           </a>
         </Flex>
       </CardFooter>

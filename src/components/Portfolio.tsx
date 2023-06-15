@@ -1,26 +1,26 @@
 import React from "react";
 import { ProjectBox } from "../components/ProjectBox";
-import chess from "../assets/projects/chess.png";
-import reminders from "../assets/projects/reminders.png";
-import stuvise from "../assets/projects/stuvise.png";
-import javascript from "../assets/logos/javascript.png";
-import typescript from "../assets/logos/typescript.png";
-import react from "../assets/logos/react.png";
-import tailwind from "../assets/logos/tailwind.png";
-import height from "../assets/projects/height.png";
-import advice from "../assets/projects/advice.png";
-import next from "../assets/logos/nextjs.png";
-import flask from "../assets/logos/flask.png";
-import css from "../assets/logos/css.png";
-import mkdown from "../assets/projects/mkdown.png";
-import valuers from "../assets/projects/valuers.png";
-import usersearch from "../assets/projects/usersearch.png";
+import chess from "../../public/assets/projects/chess.png";
+import reminders from "../../public/assets/projects/reminders.png";
+import stuvise from "../../public/assets/projects/stuvise.png";
+import javascript from "../../public/assets/logos/javascript.png";
+import typescript from "../../public/assets/logos/typescript.png";
+import react from "../../public/assets/logos/react.png";
+import tailwind from "../../public/assets/logos/tailwind.png";
+import height from "../../public/assets/projects/height.png";
+import advice from "../../public/assets/projects/advice.png";
+import next from "../../public/assets/logos/nextjs.png";
+import flask from "../../public/assets/logos/flask.png";
+import css from "../../public/assets/logos/css.png";
+import mkdown from "../../public/assets/projects/mkdown.png";
+import valuers from "../../public/assets/projects/valuers.png";
+import usersearch from "../../public/assets/projects/usersearch.png";
 import { Flex } from "@chakra-ui/react";
 
 export const Portfolio: React.FC = () => {
   return (
-    <main>
-      <h1>Portfolio</h1>
+    <main className="portfolio">
+      <h1 className="daru-text portfolio-title">Portfolio</h1>
       <Flex>
         <ProjectBox
           image={stuvise.src}
@@ -85,7 +85,28 @@ export const Portfolio: React.FC = () => {
           codeSrc="https://github.com/sam-yng/height-calculator"
         />
       </Flex>
-      <Flex></Flex>
+      <Flex>
+        <ProjectBox
+          image={chess.src}
+          title="Chess Game"
+          description="A basic chess program"
+          firstTool={javascript.src}
+          secondTool={css.src}
+          thirdTool={flask.src}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/cs50-final"
+        />
+        <ProjectBox
+          image={mkdown.src}
+          title="Markdown Editor"
+          description="A markdown editor using codemirror"
+          firstTool={typescript.src}
+          secondTool={tailwind.src}
+          thirdTool={next.src}
+          viewSrc={undefined}
+          codeSrc="https://github.com/sam-yng/markdown-editor"
+        />
+      </Flex>
     </main>
   );
 };
