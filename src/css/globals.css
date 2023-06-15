@@ -160,6 +160,20 @@
 	color: white;
 }
 
+.icon {
+	border-width: 1px;
+	border-color: white;
+	padding-inline: 10px;
+	border-radius: 8px;
+	padding-block: 4px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.icon-box {
+	margin-inline: auto;
+}
+
 .card {
 	background-color: #1E1E1E;
 	color: white;

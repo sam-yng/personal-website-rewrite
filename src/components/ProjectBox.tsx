@@ -1,4 +1,11 @@
-import { Card, CardBody, CardFooter, Flex, Stack } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  CardFooter,
+  Center,
+  Flex,
+  Stack,
+} from "@chakra-ui/react";
 import React from "react";
 import {
   InfoOutlineIcon,
@@ -43,11 +50,11 @@ export const ProjectBox: React.FC<ProjectBoxProps> = ({
         </Stack>
       </CardBody>
       <CardFooter>
-        <Flex>
-          <a href={viewSrc} target="blank">
+        <Flex className="icon-box">
+          <a href={viewSrc} target="blank" className="icon">
             {viewSrc === undefined ? <ViewOffIcon /> : <ViewIcon />}
           </a>
-          <a href={codeSrc} target="blank">
+          <a href={codeSrc} target="blank" className="icon">
             {codeSrc === undefined ? <NotAllowedIcon /> : <InfoOutlineIcon />}
           </a>
         </Flex>
